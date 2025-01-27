@@ -33,6 +33,7 @@ pub enum Error {
     Io(#[from] std::io::Error),
 }
 
+#[derive(Clone)]
 /// The frames of a decoded gif
 pub struct Frames {
     first: Frame,
